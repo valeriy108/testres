@@ -1,0 +1,9 @@
+
+<FilesMatch "\.(?i:pdf)$","\.(?i:pptx)$">
+     ForceType application/octet-stream
+	 
+     Header set Content-Disposition attachment
+</FilesMatch>
+ AddType application/vnd.ms-powerpoint 
+AddDefaultCharset utf-8
+php_value default_charset "utf-8"
